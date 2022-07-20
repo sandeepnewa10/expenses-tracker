@@ -1,0 +1,6 @@
+
+# dependencies
+/node_modules
+serve.js
+rest.http
+.env
