@@ -1,8 +1,44 @@
+
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
 import './style.css'
+import {
+  BrowserRouter,
+  Routes,
+  Route
+  
+} from "react-router-dom";
+
+
+
 function App() {
   return (
-    <>Hello World
-    <h2><i className="fa-brands fa-500px"></i></h2>
+    <>
+     
+        <BrowserRouter>
+          <Routes>           
+              <Route path="/" element={ <Login />} />
+              <Route path="/login" element={ <Login />} />
+              <Route path="/register" element={ <Register />} /> 
+              <Route path="/dashboard" element={ <Dashboard />} />                       
+
+          </Routes>
+
+        </BrowserRouter>
+
+
+
+
+
+
+
+
+
+
+
+       
+        
     </>
   );
 }
